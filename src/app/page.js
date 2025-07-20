@@ -213,46 +213,6 @@ export default function VapiPhoneInterface() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-green-500 opacity-10 rounded-full mix-blend-screen animate-blob animation-delay-600"></div>
       </div>
 
-      {/* Top Bar (Simulated Phone Status) */}
-      <div className="relative z-10 flex justify-between items-center px-6 pt-8 pb-4 bg-gradient-to-b from-gray-950 to-transparent">
-        <div className="flex items-center space-x-1 text-xs">
-          <svg
-            className="w-3 h-3 text-white"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-          </svg>
-          <span className="font-semibold">5G</span>
-          <div className="w-0.5 h-3 bg-white mx-1"></div>{" "}
-          {/* Signal separator */}
-          <div className="flex items-center space-x-0.5">
-            <div className="w-2 h-2 bg-white rounded-full"></div>
-            <div className="w-2 h-2 bg-white rounded-full"></div>
-            <div className="w-2 h-2 bg-white rounded-full"></div>
-            <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
-            <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
-          </div>
-        </div>
-        <div className="text-white text-sm font-medium">
-          {new Date().toLocaleTimeString("en-US", {
-            hour: "2-digit",
-            minute: "2-digit",
-            hour12: false,
-          })}
-        </div>
-        <div className="flex items-center space-x-1 text-xs">
-          <svg
-            className="w-4 h-4 text-white"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33V19c0 .73.6 1.33 1.33 1.33h8.34c.73 0 1.33-.6 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4z" />
-          </svg>
-          <span className="font-semibold">98%</span>
-        </div>
-      </div>
-
       {/* Main Content Area */}
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center p-8 text-center">
         {/* Profile Avatar / Icon */}
